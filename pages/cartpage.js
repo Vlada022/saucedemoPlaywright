@@ -16,7 +16,7 @@ exports.CartPage = class CartPage{
 
     async removeFirstFromCart(){
         const removeFirstProduct = this.CartListProducts.first();
-        removeFirstProduct.click();
+        await removeFirstProduct.click();
 
     }
 

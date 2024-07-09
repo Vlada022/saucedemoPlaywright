@@ -35,7 +35,7 @@ test('Verify removing item from cart( Task 4 in file)', async ({ page }) => {
 
     //Cart Page
     const Cartpage = new CartPage(page)
-    Cartpage.removeFirstFromCart();
+    await Cartpage.removeFirstFromCart();
     //Assert
     await expect(page.locator("#cart_contents_container > div > div.cart_list > div.removed_cart_item")).toBeHidden();
 });
